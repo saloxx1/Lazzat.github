@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color:silver;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.container{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.text{
+    background-image: url(chef.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;font-weight: bold;
+    margin-bottom: 20px;
+}
+.menu{
+    border-top: 2px solid darkgray;
+    border-bottom: 2px solid darkgray;
+    margin-bottom: 30px;
+}
+.ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: center;
+}
+.list{
+    margin-right: 20px;
+}
+.a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 20px 30px;
+    transition: 0.2s transform linear 0.5s background-color linear;
+}
+.a:hover{
+    transform: rotateZ();
+    background-color: lightgreen;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.foto{
+    width: 30%;
+    margin-bottom: 30px;
+    perspective: 1300px;
+}
+.link-foto{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color:orange;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: 0.2s transform linear, 0.5s background-color linear;
+}
+.link-foto:hover{
+    color: greenyellow;
+    background-color: black;
+    transform: rotateY(25deg);
+    transform-origin: 0% 50%;
+    box-shadow: 0 0 20px 5px lime;
+}
+.rasm{
+    margin-bottom: 20px;
+    transition: 0.2s transform linear, 0.1s background-color linear;
+}
+.rasm:hover{
+    transform: rotateX(10deg);
+    transform-origin: 50% 100%;
+    box-shadow: 0 0 20px 5px black;
+}
+.button{
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+.knopka{
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    background-color: white;
+    padding: 10px 30px;
+    border: 3px solid red;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.knopka:hover{
+    color: white;
+    background-color: red;
+    transform: scale(1.1);
+    transition: 0.1s transform linear, 0.1s background-color linear;
+}
+.footer{
+    background-image: url(futer.png);
+    background-repeat: no-repeat;
+    background-position: top center  ;
+    background-size: cover;
+    text-align: center;
+  }
+  .footer_form{
+    padding: 40px;
+    padding-bottom: 0;
+  }
+  .obuna{
+    border-radius: 4px;
+    background-color: red;
+    padding: 5px;
+    border-style: none;
+  }
+  .footer_input{
+    padding: 5px;
+  }
+  .footer_text{
+    font-family: monospace;
+    padding-bottom: 50px;
+    font-size:30px;
+    color: white;
+    font-weight: bold;
+  }
+  .footer{
+    background-image: url(futer.png);
+    background-repeat: no-repeat;
+    background-position: top center  ;
+    background-size: cover;
+    text-align: center;
+  }
+  .footer_form{
+    padding: 40px;
+    padding-bottom: 0;
+  }
+  .obuna{
+    border-radius: 4px;
+    background-color: red;
+    padding: 5px;
+    border-style: none;
+  }
+  .footer_input{
+    padding: 5px;
+  }
+  .footer_text{
+    font-family: monospace;
+    padding-bottom: 50px;
+    font-size:30px;
+    color: white;
+    font-weight: bold;
+  }
+
+
+  @media(max-width:900px){
+    .container{
+        padding: 90px;
+        padding-right: 90px;
+    }
+    .wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .foto{
+        width: 50%;
+        margin-bottom: 0px;
+        perspective: 1300px;
+    }
+    .link-foto{
+        padding: 0;
+    }
+    p{
+        font-size: 25px;
+    }
+  }
+  
